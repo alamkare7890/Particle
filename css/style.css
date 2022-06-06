@@ -581,7 +581,7 @@ body .setting-button{
     height: 100%;
     background: rgb(0 242 255);
     z-index: -2;
-    background: linear-gradient(90deg, #00f2ffcc,#7100b8cc);
+    background-image: linear-gradient(90deg, #00f2ffcc,#7100b8cc);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1090,10 +1090,7 @@ body .setting-button{
 .black-head h1{
     padding: 65px 0;
 }
-.better-section{
-    padding: ;
 
-}
 .better-section .better-text{
     padding: 100px 20px;
 }
@@ -1763,7 +1760,9 @@ html,body{
 .particle-text{
     padding: 50px 0;
 }
-
+.par-button{
+    background-image: linear-gradient(180deg, hwb(183 0% 0% / 0.8),hwb(277 0% 28% / 0.8));
+}
 /*=============SKILL-SECTION=============*/
 .skill-section{
     padding: 20px 10px;
@@ -1875,32 +1874,32 @@ html,body{
 }
 @media only screen and (max-width:360px){
 
-/*=============NAVIGATION-SECTION=============*/
-    .nav-section .nav-icon{
-        width: 5%;
-    }
-/*=============HEADER-SECTION=============*/
-/*=============GET_THEME-SECTION=============*/
-/*=============portfolio-SECTION=============*/
+    /*=============NAVIGATION-SECTION=============*/
+        .nav-section .nav-icon{
+            width: 5%;
+        }
+    /*=============HEADER-SECTION=============*/
+    /*=============GET_THEME-SECTION=============*/
+    /*=============portfolio-SECTION=============*/
 
-/*=============ABOUT-SECTION=============*/
+    /*=============ABOUT-SECTION=============*/
 
-/*=============BETTER-SECTION=============*/
+    /*=============BETTER-SECTION=============*/
 
-/*=============CONTACT-SECTION=============*/
-/*=============SERVICE-SECTION=============*/
+    /*=============CONTACT-SECTION=============*/
+    /*=============SERVICE-SECTION=============*/
 
-/*=============PARTICLE-SECTION=============*/
+    /*=============PARTICLE-SECTION=============*/
 
 
 
-/*=============SKILL-SECTION=============*/
+    /*=============SKILL-SECTION=============*/
 
-/*=============CONNECT-SECTION=============*/
+    /*=============CONNECT-SECTION=============*/
 
-/*==========ICONS===========*/
+    /*==========ICONS===========*/
 
-/*=============FOOTER-SECTION=============*/
+    /*=============FOOTER-SECTION=============*/
 
 
 
