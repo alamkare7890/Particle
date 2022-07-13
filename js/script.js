@@ -29,7 +29,22 @@ scrollBtn.onclick = () => {
     
     
     /*========animation=======*/
-      AOS.init();    
+    AOS.init();
+
+    /*========progress-ba=======*/
+    $a = 5;
+    $(window).scroll(function () {
+
+        if (a <= 50) {
+            $('#adobePro').addClass('animate');
+        
+        } else {
+            $('#adobePro').removeClass('animate');
+        }
+    
+    
+    })
+    
     
  });
     
