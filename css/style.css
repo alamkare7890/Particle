@@ -697,15 +697,13 @@ body .setting-button{
     background-color: #3398FF;
 }
 
-.adobe{
+.adobescroll{
+    animation: adobe-growth 3s ease 0.5s infinite;
     width: 75%;
     transition: width 0.3s ease;
 
 }
-.animate{
-    animation: adobe-growth 3s ease 0.5s infinite;
 
-}
 @keyframes adobe-growth{
     0%{
         width: 0;
