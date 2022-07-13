@@ -15,6 +15,7 @@ html,body{
     width: 95%;
     margin: 0 auto;
     padding-top: 15px;
+    max-width: 1366px;
 }
 
 .heading{
@@ -93,7 +94,10 @@ body .setting-button{
     font-weight: 500;
 
 }
+.nav-menu{
+    display: none;
 
+}
 /*-----Navi-button------*/
 .hidden-nav{
     width: 300px;
@@ -456,8 +460,8 @@ body .setting-button{
 /*=============BETTER-SECTION=============*/
 .better-section{
     width: 100%;
-    min-height: 550px;
-    padding: 50px 0;
+    
+    padding: 100px 0;
     background-image: url(../image/quote-background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -485,7 +489,6 @@ body .setting-button{
     color: #F7FFFF;
     text-align: center;
     font-weight: 300;
-    padding: 70px 50px 10px 50px;
 }
 .better-section p{
     text-align: center;
@@ -558,6 +561,8 @@ body .setting-button{
     color: #7100B8;
     font-size: 2.2rem;
     padding: 0 10px;
+    transition: all 0.4s ease;
+    padding: 5px;
 }
 .service-box ul li a .fa:hover{
     box-shadow: 1px 1px 5px 5px #7100B8;
@@ -936,20 +941,25 @@ body .setting-button{
 .scroll-top-button a{
     text-decoration: none;
     display: inline-block;
-    padding: 8px;
+    padding: 12px;
     background-color: #0000003d;
     border-radius: 50%;
     position: fixed;
-        right: 10px;
-        bottom: 10px;
+        right: 25px;
+        bottom: 25px;
     z-index: 2;
-
+    border: 1px solid #000;
+    transition: all 0.4s ease;
 
 }
 .scroll-top-button a .fa{
     font-size: 1.5rem;  
     color: #F7FFFF;
     font-weight: 200;
+}
+.scroll-top-button a:hover{
+    box-shadow: 0 0 15px #000;
+
 }
 
 
@@ -1001,8 +1011,18 @@ body .setting-button{
     width: 450px;
 }
 .navigation{
-    width: 450px;
-    top: 120px;
+
+    display: none;
+}
+.nav-menu{
+
+
+
+}
+
+.nav-icon{
+
+    display: none;
 }
 .nav-icon-group{
     padding: 20px;
@@ -1116,9 +1136,7 @@ body .setting-button{
 .service-box ul li a .fa {
     font-size: 3rem;
 }
-.service-box ul{
-    padding-top: 250px;
-}
+
 /*=============PARTICLE-SECTION=============*/
 .particle-section{
     padding: 200px 0;
@@ -1233,6 +1251,9 @@ body .setting-button{
 .navigation ul li{
     padding: 20px;
 }
+.nav-menu{
+    display: flex;
+}
 /*=============HEADER-SECTION=============*/
 .header-section{
     height: 650px;
@@ -1278,9 +1299,7 @@ body .setting-button{
 .service-box ul li{
     padding-bottom: 30px;
 }
-.service-box ul{
-    padding-top: 180px;
-}
+
 /*=============PARTICLE-SECTION=============*/
 .particle-section{
     padding: 150px 0;
@@ -1555,9 +1574,7 @@ html,body{
 
 }
 /*=============BETTER-SECTION=============*/
-.better-section h2{
-    padding: 50px 0 0 0 ;
-}
+
 /*=============CREATIVE-SECTION=============*/
 .card-1, .card-2,.card-3,.card-4{
     height: 350px;
