@@ -698,7 +698,7 @@ body .setting-button{
 }
 
 .adobescroll{
-    animation: adobe-growth 3s ease 0.5s infinite;
+    animation: adobe-growth 3s ease 0.5s ;
     width: 75%;
     transition: width 0.3s ease;
 
@@ -717,10 +717,10 @@ body .setting-button{
 
 }
 
-.wordpress{
+.wordscroll{
     width: 80%;
     transition: width 0.3s ease;
-    animation: wordpress-growth 3s ease 0.5s infinite;
+    animation: wordpress-growth 3s ease 0.5s;
 
     
 }
@@ -736,10 +736,10 @@ body .setting-button{
     }
 
 }
-.drupal{
+.drupalscroll{
     width: 50%;
     transition: width 0.3s ease;
-    animation: drupal-growth 3s ease 0.5s infinite;
+    animation: drupal-growth 3s ease 0.5s ;
 
 }
 @keyframes drupal-growth{
@@ -754,10 +754,10 @@ body .setting-button{
     }
 
 }
-.gra-design{
+.designscroll{
     width: 70%;
     transition: width 0.3s ease;
-    animation: design-growth 3s ease 0.5s infinite;
+    animation: design-growth 3s ease 0.5s;
 
 }
 @keyframes design-growth{
@@ -772,10 +772,10 @@ body .setting-button{
     }
 
 }
-.html-css{
+.stylescroll{
     width: 59%;
     transition: width 0.3s ease;
-    animation: html-growth 3s ease 0.5s infinite;
+    animation: html-growth 3s ease 0.5s;
 
 }
 @keyframes html-growth{

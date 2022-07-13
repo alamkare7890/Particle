@@ -42,7 +42,30 @@ scrollBtn.onclick = () => {
         } else {
             $('#adobePro').removeClass('adobescroll');
         }
+        
+        if ($(this).scrollTop() > 50) {
+            $('#wordPro').addClass('wordscroll');
+        } else {
+            $('#wordPro').removeClass('wordscroll');
+        }
 
+        if ($(this).scrollTop() > 50) {
+            $('#drupalPro').addClass('drupalscroll');
+        } else {
+            $('#drupalPro').removeClass('drupalscroll');
+        }
+        
+        if ($(this).scrollTop() > 50) {
+            $('#designPro').addClass('designscroll');
+        } else {
+            $('#designPro').removeClass('designscroll');
+        }
+        
+        if ($(this).scrollTop() > 50) {
+            $('#stylePro').addClass('stylescroll');
+        } else {
+            $('#stylePro').removeClass('stylescroll');
+        }
     
         
     })
