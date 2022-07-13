@@ -102,13 +102,68 @@ body .setting-button{
 }
 .nav-menu li{
     margin-left: 20px;
+    padding: 5px;
+    position: relative;
+    transition: all 0.5s ease;
+
+}
+.nav-menu li::before, .nav-menu li::after{
+    content: "";
+    position: absolute;
+    width: 0;    
+    height: 0;
+    background-color: #00f2ff;
+    transition: all 0.5s ease;
+
+
+}
+.nav-menu li::before{
+    top: 0;
+    left: 0;
+    box-shadow: -5px -5px 0 #00f2ff;
+
+}
+.nav-menu li::after{
+    bottom: 0;
+    right: 0;
+    box-shadow: -5px 5px 0 0 #00f2ff;
+
 }
 .nav-menu li a{
     font-size: 0.85rem;
     text-decoration: none;
     text-transform: uppercase;
     color: #F7FFFF;
+    transition: all 0.5s ease;
+}
+.nav-menu li:hover:before, .nav-menu li:hover:after{
+    height: 3%;
+    width: 100%;
+}
+.nav-menu li a::before, .nav-menu li a::after{
+    content: "";
+    position: absolute;
+    width: 0;    
+    height: 0;
+    background-color: #00f2ff;
+    transition: all 0.5s ease;
 
+}
+.nav-menu li a::before{
+    left: 0;
+    bottom: 0;
+    box-shadow: -5px 5px 0 0 #00f2ff;
+
+}
+.nav-menu li a::after{
+    right: 0;
+    top: 0;
+    box-shadow: -5px -5px 0 0 #00f2ff;
+
+}
+.nav-menu li:hover a:before, .nav-menu li:hover a:after{
+    width: 3%;
+    height: 100%;
 }
 .nav-menu li a i{
     padding-left: 5px;
@@ -123,6 +178,7 @@ body .setting-button{
     position: absolute;
     right: 0;
     top: 80px;
+    z-index: 100;
     background-color: #15293a;
 }
 .nav-icon-group{
@@ -912,11 +968,13 @@ body .setting-button{
 .message-right input:focus{
     border: 1px solid #00f2ff;
     outline: none;
-
+    box-shadow: 0 0 15px -4px #00f2ff;
 }
 .message-right textarea:focus{
     border: 1px solid #00f2ff;
     outline: none;
+    box-shadow: 0 0 15px -4px #00f2ff;
+
 }
 .message-right textarea{
     height: 80px;
