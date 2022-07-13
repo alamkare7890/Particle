@@ -95,7 +95,17 @@ body .setting-button{
 
 }
 .nav-menu{
-    display: none;
+    list-style-type: none;  
+
+
+}
+.nav-menu li{
+    margin-left: 15px;
+}
+.nav-menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F7FFFF;
 
 }
 /*-----Navi-button------*/
@@ -1253,6 +1263,9 @@ body .setting-button{
 }
 .nav-menu{
     display: flex;
+}
+.nav-icon{
+    display: none;
 }
 /*=============HEADER-SECTION=============*/
 .header-section{
