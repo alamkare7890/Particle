@@ -27,6 +27,10 @@ scrollBtn.onclick = () => {
         });
     })*/
     
+    
+    /*========animation=======*/
+      AOS.init();    
+    
  });
     
 

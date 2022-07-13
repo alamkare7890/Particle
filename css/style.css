@@ -76,7 +76,8 @@ body .setting-button{
 /*=============NAVIGATION-SECTION=============*/
 .nav-section{
     padding: 0 30px 10px 0;
-    
+    align-items: center;
+
 }
 .nav-section .logo-image{
     width: 15%;
@@ -96,17 +97,21 @@ body .setting-button{
 }
 .nav-menu{
     list-style-type: none;  
-
+    display: none;
 
 }
 .nav-menu li{
-    margin-left: 15px;
+    margin-left: 20px;
 }
 .nav-menu li a{
+    font-size: 0.85rem;
     text-decoration: none;
     text-transform: uppercase;
     color: #F7FFFF;
 
+}
+.nav-menu li a i{
+    padding-left: 5px;
 }
 /*-----Navi-button------*/
 .hidden-nav{
@@ -692,7 +697,7 @@ body .setting-button{
     background-color: #3398FF;
 }
 
-.skill .adobe{
+.adobe{
     width: 75%;
     transition: width 0.3s ease;
     animation: adobe-growth 3s ease 0.5s infinite;
@@ -711,7 +716,7 @@ body .setting-button{
 
 }
 
-.skill .wordpress{
+.wordpress{
     width: 80%;
     transition: width 0.3s ease;
     animation: wordpress-growth 3s ease 0.5s infinite;
@@ -730,7 +735,7 @@ body .setting-button{
     }
 
 }
-.skill .drupal{
+.drupal{
     width: 50%;
     transition: width 0.3s ease;
     animation: drupal-growth 3s ease 0.5s infinite;
@@ -748,7 +753,7 @@ body .setting-button{
     }
 
 }
-.skill .gra-design{
+.gra-design{
     width: 70%;
     transition: width 0.3s ease;
     animation: design-growth 3s ease 0.5s infinite;
@@ -766,7 +771,7 @@ body .setting-button{
     }
 
 }
-.skill .html-css{
+.html-css{
     width: 59%;
     transition: width 0.3s ease;
     animation: html-growth 3s ease 0.5s infinite;
@@ -957,7 +962,7 @@ body .setting-button{
     position: fixed;
         right: 25px;
         bottom: 25px;
-    z-index: 2;
+    z-index:100;
     border: 1px solid #000;
     transition: all 0.4s ease;
 
@@ -1026,7 +1031,7 @@ body .setting-button{
 }
 .nav-menu{
 
-
+    display: flex;
 
 }
 
@@ -1562,7 +1567,7 @@ html,body{
 /*=============HEADER-SECTION=============*/
 
 .head-text{
-    padding: 20px 10px;
+    padding: 100px 10px;
 }
 .head-text h1{
     font-size: 2.8rem;
