@@ -11,6 +11,17 @@ html,body{
     font-family: 'Blinker', sans-serif;
     position: relative;
 }
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(#b44aff, #f1f1f1, yellow);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #b44aff;
+}
+body::-webkit-scrollbar-track{
+    box-shadow: inset 5px 5px 5px #000;
+}
 .container{
     width: 95%;
     margin: 0 auto;
@@ -170,16 +181,19 @@ body .setting-button{
 }
 /*-----Navi-button------*/
 .hidden-nav{
-    width: 300px;
-    display: none;
+    position: relative;
 }
 .navigation{
     width: 300px;
-    position: absolute;
-    right: 0;
-    top: 80px;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    height: 100vh;
     z-index: 100;
     background-color: #15293a;
+    transition: all 0.5s ease;
+    animation: navAni 0.9s ease backwards;
+
 }
 .nav-icon-group{
     padding: 20px;
@@ -222,7 +236,38 @@ body .setting-button{
     padding: 10px;
     justify-content: space-between;
 }
+.navSlide{
+    right: 0;
+    transition: all 0.5s ease;
+    overflow-y: scroll;
+}
+.navSlide::-webkit-scrollbar{
+    width: 5px;
 
+}
+.navSlide::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #00f2ff;
+
+}
+.navSlide::-webkit-scrollbar-track{
+    box-shadow: inset 5px 5px 0 #000;
+
+}
+@keyframes navAni {
+    100%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.7;
+    }
+    25%{
+        opacity: 0.9;
+    }
+    0%{
+        opacity: 1;
+    }
+}
 /*=============HEADER-SECTION=============*/
 .header-section{
     width: 100%;
@@ -750,7 +795,7 @@ body .setting-button{
 .skill .progress .adobe, .wordpress, .drupal, .gra-design, .html-css{
     margin-top: 3px;
     height: 5px;
-    background-color: #3398FF;
+    background-color: #3398FF;  
 }
 
 .adobescroll{
@@ -1084,7 +1129,7 @@ body .setting-button{
 .hidden-nav{
     width: 450px;
 }
-.navigation{
+.hidden-nav .navigation{
 
     display: none;
 }
@@ -1299,6 +1344,7 @@ body .setting-button{
 /*=============NAVIGATION-SECTION=============*/
 .hidden-nav{
     width: 380px;
+    display: none;
 }
 .navigation{
     width: 380px;
@@ -1593,15 +1639,7 @@ html,body{
 
 
 /*-----Navi-button------*/
-.hidden-nav{
-    width: 250px;
-}
-.navigation{
-    width: 250px;
-    position: absolute;
-    right: 0;
-    top: 80px;
-}
+
 .nav-icon-group{
     padding: 20px;
 }

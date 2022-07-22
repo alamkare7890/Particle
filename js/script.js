@@ -11,10 +11,11 @@ scrollBtn.onclick = () => {
     
 
     $("#naviBar").click(function () {
-        $("#navOpen").slideToggle(1500);
+        $("#navOpen").addClass('navSlide');
     })
+    
     $("#navClose").click(function () {
-        $("#navOpen").fadeOut(300);
+        $("#navOpen").removeClass('navSlide');
     })
 
     /*skill metter
